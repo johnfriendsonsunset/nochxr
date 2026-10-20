@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>nochxr.com</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+  :root { padding-top: env(safe-area-inset-top, 0px); padding-bottom: env(safe-area-inset-bottom, 0px); }
+  body { margin: 0; }
+  img { max-width: 100%; }
+
+  /* Layout: black screen; one logo mark (two upward triangles, white over grey, overlapping) above label-left lists. Home = working on / driven by. Each venture page keeps the same skeleton. Single dark theme by design. */
+  :root {
+    --bg: #000000;
+    --fg: #f2f2f2;
+    --mid: #b8b8b8;
+    --dim: #6e6e6e;
+    --mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+    color-scheme: dark;
+  }
+  html, body { height: 100%; }
+  body {
+    background: var(--bg);
+    color: var(--fg);
+    font-family: var(--mono);
+    overflow: hidden;
+    padding-inline: 16px;
+  }
+  .stage.scroll .foot { position: static; padding-top: 32px; }
+  .stage {
+    position: relative;
+    height: 100%;
+    min-height: 520px;
+    display: grid;
+    place-items: center;
+  }
+  .page { display: none; }
+  .page.on { display: grid; gap: 56px; justify-items: start; }
+  .mark { width: 38px; margin-bottom: 8px; }
+  .mark svg { width: 100%; height: auto; display: block; overflow: visible; }
+  .mark a { display: block; }
+  .block { display: grid; grid-template-columns: auto auto; column-gap: 28px; align-items: start; }
+  .block h2 {
+    margin: 0;
+    padding-top: 3px;
+    white-space: nowrap;
+    font-size: 11px;
+    font-weight: 400;
+    letter-spacing: .22em;
+    color: var(--mid);
+  }
+  .block ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+  .block li { font-size: 14px; letter-spacing: .04em; }
+  .block a { color: inherit; text-decoration: none; }
+  .block a:hover, .block a:focus-visible { color: var(--mid); outline: none; }
+  .block.dim, .block.dim h2 { color: var(--dim); }
+  .block.dim a:hover { color: var(--mid); }
+
+  .page.long.on { align-content: start; padding-block: 56px 72px; max-width: 100%; }
+  .stage.scroll { overflow-y: auto; place-items: start center; }
+  .block.prose { grid-template-columns: auto minmax(0, 1fr); max-width: 100%; }
+  .copy { display: grid; gap: 14px; max-width: 58ch; min-width: 0; }
+  .copy p { margin: 0; font-size: 14px; line-height: 1.6; letter-spacing: .02em; }
+  .block.dim li { line-height: 1.5; }
+  @media (max-width: 560px) {
+    .block.prose { grid-template-columns: 1fr; row-gap: 10px; }
+  }
+  .foot {
+    position: absolute;
+    bottom: 18px; left: 0; right: 0;
+    text-align: center;
+    font-size: 10px;
+    letter-spacing: .2em;
+    color: var(--mid);
+  }
+  .foot a { color: inherit; text-decoration: none; }
+  .foot a:hover { color: var(--fg); }
+</style>
+</head>
+<body>
+
+
+<main class="stage">
+
+  <!-- HOME -->
+  <section class="page on" id="p-home">
+    <div class="mark" aria-hidden="true">
+      <svg viewBox="0 0 100 110">
+        <polygon points="50,38 90,106 10,106" fill="none" stroke="var(--dim)" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+        <polygon points="50,2 90,70 10,70" fill="none" stroke="var(--fg)" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+      </svg>
+    </div>
+    <div class="block">
+      <h2>working on</h2>
+      <ul>
+        <li><a href="#deadatlantic">dead atlantic</a></li>
+        <li><a href="#andfriends">&amp; friends</a></li>
+        <li><a href="#godspeed">godspeed</a></li>
+      </ul>
+    </div>
+    <div class="block dim">
+      <h2>driven by</h2>
+      <ul><li>family</li><li>spirit</li><li>impact</li></ul>
+    </div>
+  </section>
+
+  <!-- DEAD ATLANTIC -->
+  <section class="page long" id="p-deadatlantic">
+    <div class="mark"><a href="#home" aria-label="home"><svg viewBox="0 0 100 110">
+      <polygon points="50,38 90,106 10,106" fill="none" stroke="var(--dim)" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+      <polygon points="50,2 90,70 10,70" fill="none" stroke="var(--fg)" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+    </svg></a></div>
+    <div class="block prose">
+      <h2>what is dead atlantic</h2>
+      <div class="copy">
+        <p>the name came to me in rehab in 2014. i didn't know what it was or what it would be, but i knew it was important to write it down. i made it my instagram and did nothing with it until 2023.</p>
+        <p>since then i've been using the name as a means to express myself through clothing and storytelling. i'm not good at running this brand, because i never wanted it to be a brand in the first place. but now we're here, and it's there, and it's taken on a personality and an agenda of its own.</p>
+        <p>it's now a nonprofit focused on lifestyle garments, technical snow gear, and storytelling through film and video. the company is not well organized, but the clothes are extremely well made, and i believe god wants me to just keep going and keep creating. eventually, if the world deems it so, dead atlantic will be a household name.</p>
+        <p>my promise to you: all of the profits, forever and always, will go towards helping humanity and our collective home in whatever way we see best fit.</p>
+        <p>i love dead atlantic, and i love all of you, even when you confuse and frustrate me. i know i'm lucky to be able to play and explore.</p>
+      </div>
+    </div>
+    <div class="block dim">
+      <h2>more</h2>
+      <ul>
+        <li>products and mission &rarr; <a href="https://deadatlantic.com">deadatlantic.com</a></li>
+        <li>send us a message &rarr; <a href="https://instagram.com/deadatlantic">@deadatlantic</a></li>
+        <li>in person &rarr; <a href="#andfriends">&amp; friends</a>, los angeles. my other, for-profit, project.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- & FRIENDS -->
+  <section class="page long" id="p-andfriends">
+    <div class="mark"><a href="#home" aria-label="home"><svg viewBox="0 0 100 110">
+      <polygon points="50,38 90,106 10,106" fill="none" stroke="var(--dim)" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+      <polygon points="50,2 90,70 10,70" fill="none" stroke="var(--fg)" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+    </svg></a></div>
+    <div class="block prose">
+      <h2>what is &amp; friends</h2>
+      <div class="copy">
+        <p>glad you asked. it's a car wash, a cafe, and an outdoor adventure store.</p>
+        <p>originally the space was going to be the dead atlantic flagship store, but i knew it wasn't the right time.</p>
+        <p>i love cars and i love taking care of my stuff. i'm not really a gearhead, actually not at all, but i do love race cars and trucks. i also love harleys, coffee, matcha, and exploring the outdoors. i really love snowboarding and surfing, and i also enjoy hiking, climbing, backpacking, camping, and stuff like that.</p>
+        <p>i basically just combined all of those things into one lot.</p>
+        <p>if you are reading this, here's an easter egg for a free car wash. tell the greeter you're a friend of noch's (pronounced no-sh). he'll say, "oh yeah? what's his favorite number?" you say 34. he'll comp your wash. enjoy.</p>
+      </div>
+    </div>
+    <div class="block dim">
+      <h2>more</h2>
+      <ul>
+        <li>3140 w sunset blvd, silver lake, los angeles</li>
+        <li>opening nov 15, 2026</li>
+        <li><a href="https://friendsonsunset.com">friendsonsunset.com</a> &middot; <a href="https://instagram.com/friendsonsunset">@friendsonsunset</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- GODSPEED -->
+  <section class="page long" id="p-godspeed">
+    <div class="mark"><a href="#home" aria-label="home"><svg viewBox="0 0 100 110">
+      <polygon points="50,38 90,106 10,106" fill="none" stroke="var(--dim)" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+      <polygon points="50,2 90,70 10,70" fill="none" stroke="var(--fg)" stroke-width="1.2" vector-effect="non-scaling-stroke"/>
+    </svg></a></div>
+    <div class="block prose">
+      <h2>what is godspeed</h2>
+      <div class="copy">
+        <p>godspeed is part 1 of a larger mission. it's a sourdough bagel spot in venice focused on strong relationships with farms, whole foods, and simple ingredients.</p>
+        <p>my pops owns a bagel shop on the east coast, and breakfast was always a huge part of our family dynamic. the concept is different, but the intention is similar: to bring people together in a loving way. hence the name. we know you're just passing through, but while you're here, let us love you the best way we know how. with good tunes and great food.</p>
+        <p>the space is really special as well. i've designed a few spaces over the last decade, a few homes and retail spaces, but i really feel like this is some of my best work. we spent five years finding the right space for this concept and finally landed on a historical building on the venice / santa monica line.</p>
+        <p>you can read more about it on our website below. you can also find more about the farms we work with, the future intention of godspeed, and how we take care of our staff. please join us.</p>
+      </div>
+    </div>
+    <div class="block dim">
+      <h2>more</h2>
+      <ul>
+        <li>3116 2nd street, santa monica</li>
+        <li>opening 2027</li>
+        <li><a href="https://instagram.com/godspeedbagel">@godspeedbagel</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <div class="foot"><a href="#home">nochxr</a></div>
+</main>
+
+<script>
+  (function () {
+    var ids = ['home', 'deadatlantic', 'andfriends', 'godspeed'];
+    function show() {
+      var h = (location.hash || '#home').slice(1);
+      if (ids.indexOf(h) < 0) h = 'home';
+      ids.forEach(function (id) {
+        document.getElementById('p-' + id).classList.toggle('on', id === h);
+      });
+    }
+    function fit() {
+      var h = (location.hash || '#home').slice(1);
+      var el = document.getElementById('p-' + h);
+      document.querySelector('.stage').classList.toggle('scroll', !!(el && el.classList.contains('long')));
+      window.scrollTo(0, 0);
+    }
+    window.addEventListener('hashchange', function () { show(); fit(); });
+    show(); fit();
+  })();
+</script>
+
+</body>
+</html>
